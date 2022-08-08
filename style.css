@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.header-logo {
+  padding: 50px 0px 70px 80px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 0px 80px;
+}
+
+.description {
+  margin-left: 60px;
+  width: 460px;
+  padding-top: 40px;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.description-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.description-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.register-button {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  color: hsl(257, 40%, 49%);
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 30px;
+  width: 200px;
+  height: 50px;
+}
+
+.register-button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.icons {
+  float: right;
+  margin-right: 110px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(178deg)
+    brightness(103%) contrast(102%);
+  margin-right: 10px;
+}
+
+.footer-icon:hover {
+  filter: invert(81%) sepia(24%) saturate(5251%) hue-rotate(241deg)
+    brightness(98%) contrast(86%);
+}
+
+.attribution {
+  margin-top: 110px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 0px 40px;
+  }
+
+  .header-logo {
+    padding: 30px 0px 70px 40px;
+    width: 165px;
+  }
+
+  .illustration {
+    width: 300px;
+  }
+
+  .description {
+    margin-left: 0px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .description-title {
+    font-size: 24px;
+  }
+
+  .description-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .register-button {
+    width: 230px;
+    height: 50px;
+    margin-bottom: 60px;
+  }
+
+  .icons {
+    float: center;
+  }
+}
